@@ -20,7 +20,7 @@ Installeer zijn one line install script:
 ```bash
 sh -c "$(curl https://raw.githubusercontent.com/fabianishere/udm-iptv/master/install.sh -sSf)"
 ```
-Vervolgens dien je de gevraagde stappen te doorlopen. Tip: UDM Pro (SE/Max) SFP+ WAN = ETH9
+Vervolgens dien je de gevraagde stappen te doorlopen. Tip: ``UDM Pro (SE/Max) SFP+ WAN = ETH9``
 
 ### SSH - Configureren van udm-iptv.conf
 Ook het script maakt gebruik van improxy inplaats van igmproxy package. De juiste package hebben we eerder geinstalleerd.
