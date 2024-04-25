@@ -9,13 +9,17 @@ De ingebouwde versie heeft benaming improxy, we dienen de standaard igmpproxy pa
 
 ### SSH - Installeer packages
 Stap 1:
-``apt-update && apt install nano igmpproxy``
+```bash
+apt-update && apt install nano igmpproxy
+```
 
 ### SSH - Installeer UDM-IPTV script
 Als eerst; Alle credits voor dit script gaan naar @fabianishere.
 
 Installeer zijn one line install script:
-``sh -c "$(curl https://raw.githubusercontent.com/fabianishere/udm-iptv/master/install.sh -sSf)"``
+```bash
+sh -c "$(curl https://raw.githubusercontent.com/fabianishere/udm-iptv/master/install.sh -sSf)"
+```
 Vervolgens dien je de gevraagde stappen te doorlopen. Tip: UDM Pro (SE/Max) SFP+ WAN = ETH9
 
 ### SSH - Configureren van udm-iptv.conf
@@ -25,7 +29,7 @@ Pas nu het conf bestand aan met "nano /etc/udm-iptv.conf".
 Pas het aan naar onderstaande waardes. Let op! "IPTV_LAN_INTERFACES="br4" is de enige variabele welke ik niet voor jou kan bepalen.
 Dit is namelijk
 
-``
+```bash
 IPTV_WAN_INTERFACE="eth9"
 IPTV_WAN_VLAN="4"
 IPTV_WAN_VLAN_INTERFACE="iptv"
@@ -35,9 +39,8 @@ IPTV_LAN_INTERFACES="br4"
 IPTV_IGMPPROXY_DISABLE_QUICKLEAVE="false"
 IPTV_IGMPPROXY_DEBUG="true"
 IPTV_IGMPPROXY_PROGRAM="igmpproxy"
-IPTV_IGMPPROXY_IGMP_VERSION="2"``
-
-
+IPTV_IGMPPROXY_IGMP_VERSION="2"
+```
 
 ## to be continued.
 Er moet nog meer gebeuren;
