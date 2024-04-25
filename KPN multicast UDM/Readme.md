@@ -26,7 +26,7 @@ Vervolgens dien je de gevraagde stappen te doorlopen. Tip: UDM Pro (SE/Max) SFP+
 Ook het script maakt gebruik van improxy inplaats van igmproxy package. De juiste package hebben we eerder geinstalleerd.
 Pas nu het conf bestand aan met ``"nano /etc/udm-iptv.conf"``
 
-Pas het aan naar onderstaande waardes. Let op! "IPTV_LAN_INTERFACES="br4" is de enige variabele welke ik niet voor jou kan bepalen.
+Pas het aan naar onderstaande waardes. Let op! ``"IPTV_LAN_INTERFACES="br4"`` is de enige variabele welke ik niet voor jou kan bepalen.
 Dit is namelijk
 
 ```bash
