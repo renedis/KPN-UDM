@@ -27,7 +27,7 @@ Ook het script maakt gebruik van improxy inplaats van igmproxy package. De juist
 Pas nu het conf bestand aan met ``"nano /etc/udm-iptv.conf"``
 
 Pas het aan naar onderstaande waardes. Let op! ``"IPTV_LAN_INTERFACES="br4"`` is de enige variabele welke ik niet voor jou kan bepalen.
-Dit is namelijk
+Dit is namelijk de bridge waar multicast op je lokale LAN moet werken. Als je het script hebt uitgevoerd staat dit waarschijnlijk al goed.
 
 ```bash
 IPTV_WAN_INTERFACE="eth9"
