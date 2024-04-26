@@ -17,15 +17,6 @@ To upgrade your SFP, follow the steps below:
    - Username: `admin`
    - Password: `zrmt123!@#`
 
-**Upgrade Procedure**:
-   ```shell
-   tftp 192.168.200.2 ZR00_V090.08
-   fuse image0 ZR00_V090.08
-   setenv target_image 0
-   saveenv
-   reset
-   ```
-
 ## Detailed steps
 
 ```bash
