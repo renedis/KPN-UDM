@@ -17,9 +17,6 @@ De KPN NL versie betreft `ZR00_V090.08`
 
 Om je Zaram SFP+ te upgraden, volg de volgende stappen:
 
-**Verbind naar de SFP+**: 
-   - Use SSH to connect to the SFP.
-
 **Login Credentials**:
    - Username: `admin`
    - Password: `zrmt123!@#`
