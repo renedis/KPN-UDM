@@ -4,7 +4,7 @@ De standaardmethode voor het instellen van multicast is niet voldoende effectief
 ## Installeren script
 
 De standaard ingebouwde IGMP proxy van de UDM Pro (SE/Max) werkt helaas niet goed. Om tot een goede werking van multicast te komen moeten er aanvullende acties plaatsen vinden. Dit moet via SSH uitgevoerd worden. Houd er rekening mee dat je Zaram SFP+ verbinding al werkt/actief is!
-De ingebouwde versie heeft benaming improxy, we dienen de standaard igmpproxy package te installeren. Voor gemaks doeleinde installeren we ook de nano package. Ter info: Ten alle tijden dient het vinkje in de Unifi GUI uit te blijven.
+De ingebouwde versie heeft benaming improxy, we dienen de standaard igmpproxy package te installeren. Voor gemaks doeleinde installeren we ook de nano package. Ter info: Ten alle tijden dient het vinkje in de Unifi WebGUI uit te blijven.
 
 ### 1. SSH - Installeer packages
 Voer de volgende opdracht uit om de benodigde packages te installeren:
@@ -24,7 +24,7 @@ Volg vervolgens de gevraagde stappen. Een tip: ``UDM Pro (SE/Max) SFP+ WAN = ETH
 ### 3. SSH - Configureren van udm-iptv.conf
 Ook het script maakt gebruik van improxy in plaats van het igmpproxy-pakket. De juiste package hebben we eerder geïnstalleerd. Pas nu het conf-bestand aan met de volgende opdracht: ``"nano /etc/udm-iptv.conf"``
 
-Pas het aan naar onderstaande waardes. Let op! ``"IPTV_LAN_INTERFACES="br4""`` is de enige variabele die ik niet voor jou kan bepalen. Dit is namelijk de bridge waar multicast op je lokale LAN moet werken. Als je het script hebt uitgevoerd staat dit waarschijnlijk al goed.
+Pas het aan naar onderstaande waardes. Let op! ``"IPTV_LAN_INTERFACES="br4"`` is de enige variabele die ik niet voor jou kan bepalen. Dit is namelijk de bridge waar multicast op je lokale LAN moet werken. Als je het script van @fabianishere hebt uitgevoerd staat dit waarschijnlijk al goed.
 
 ```bash
 IPTV_WAN_INTERFACE="eth9"
@@ -39,8 +39,13 @@ IPTV_IGMPPROXY_PROGRAM="igmpproxy"
 IPTV_IGMPPROXY_IGMP_VERSION="2"
 ```
 
-## to be continued.
-Er moet nog meer gebeuren;
-- storm-control op de poorten aan waar je KPN SDB op aangesloten zit
-- multi-cast DNS in de GUI.
-- etc
+### 4. Unifi WebGUI - Multicast DNS en IGMP Snooping
+Controleer in de WebGUI van je UDM Pro (SE/Max) of de volgende instellingen aan staan bij ``Instellingen > Networks``
+
+- ``Multicast DNS`` *Op het Subnet van IPTV waar je STB op aangesloten zit.
+- ``IGMP Snooping`` *Op het subnet van IPTV waar je STB op aangesloten zit.
+
+### 5. Wachten op toepassen op netwerk
+Geduld is een schone zaak. Wanneer je alleen een UDM Pro (SE/Max) in je netwerk hebt naast clients, zullen de instellingen snel worden toegepast. Echter, wanneer je een groter netwerk hebt met meerdere switches, kan het toepassen van de instellingen veel langer duren. Houd rekening met een verwerkingstijd van 20 tot 30 minuten.
+
+Het is belangrijk op te merken dat een reboot om het proces te versnellen geen effect zal hebben. Het systeem heeft tijd nodig om de wijzigingen door te voeren en deze te verspreiden naar alle aangesloten apparaten.
