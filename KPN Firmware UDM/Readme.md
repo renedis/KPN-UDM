@@ -20,26 +20,26 @@ To upgrade your SFP, follow the steps below:
 ## Detailed steps
 
 ```bash
-/dev/pty1088411488 login: admin
+/dev/pty1000000000 login: admin
 Password: zrmt123!@#
 RTEMS Shell on /dev/pty1088411488. Use 'help' to list commands.
-admin@ZXONT04RNN [/] # ver
+admin@ZXONT00000 [/] # ver
     onu/omci stack version: ZXTZR-V0.32 (build 12127) Dec 12 2023 13:32:25
     pon version: 0.3
     ethc version: 0.3
     image0: ZXTZR-V0.32 valid
     image1: ZXTZR-V0.32 valid active committed next_committed
-admin@ZXONT04RNN [/] #
-admin@ZXONT04RNN [/] # tftp 192.168.200.2 ZR00_V090.08
+admin@ZXONT00000 [/] #
+admin@ZXONT00000 [/] # tftp 192.168.200.2 ZR00_V090.08
     tftp: socket 31
     downloading .......................
     tftp: total 1454516 bytes received
     tftp: saved to "./ZR00_V090.08"
-admin@ZXONT04RNN [/] #
-admin@ZXONT04RNN [/] # ls
+admin@ZXONT00000 [/] #
+admin@ZXONT00000 [/] # ls
     ZR00_V090.08        etc          mnt          tmp dev          firmware     test
-admin@ZXONT04RNN [/] #
-admin@ZXONT04RNN [/] # fuse image0 ZR00_V090.08
+admin@ZXONT00000 [/] #
+admin@ZXONT00000 [/] # fuse image0 ZR00_V090.08
     verify image...
     file size: 1458176 bytes
     data size: 1456704
@@ -53,11 +53,11 @@ admin@ZXONT04RNN [/] # fuse image0 ZR00_V090.08
 	fuse verify.
 	fuse compare done (1607175 usec).
 	update done.
-admin@ZXONT04RNN [/] #
-admin@ZXONT04RNN [/] # setenv target_image 0
+admin@ZXONT00000 [/] #
+admin@ZXONT00000 [/] # setenv target_image 0
 	target_image=0
-admin@ZXONT04RNN [/] # saveenv
-admin@ZXONT04RNN [/] # reset
+admin@ZXONT00000 [/] # saveenv
+admin@ZXONT00000 [/] # reset
 ```
 
 # Summary of all commands
