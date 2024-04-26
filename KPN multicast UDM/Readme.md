@@ -3,31 +3,28 @@ De standaardmethode voor het instellen van multicast is niet voldoende effectief
 
 ## Installeren script
 
-De standaard ingebouwde IGMP proxy van de UDM Pro (SE/Max) werkt helaas niet goed. Om tot een goede werking van multicast te komen moeten er aanvullende acties plaatsen vinden. Ten alle tijden dient het vinkje in de GUI uit te blijven.
-Dit moet via SSH uitgevoerd worden. Houd er rekening mee dat je Zaram SFP+ verbinding al werkt/actief is!
-De ingebouwde versie heeft benaming improxy, we dienen de standaard igmpproxy package te installeren. Voor gemaks doeleinde installeren we ook de nano package.
+De standaard ingebouwde IGMP proxy van de UDM Pro (SE/Max) werkt helaas niet goed. Om tot een goede werking van multicast te komen moeten er aanvullende acties plaatsen vinden. Dit moet via SSH uitgevoerd worden. Houd er rekening mee dat je Zaram SFP+ verbinding al werkt/actief is!
+De ingebouwde versie heeft benaming improxy, we dienen de standaard igmpproxy package te installeren. Voor gemaks doeleinde installeren we ook de nano package. Ter info: Ten alle tijden dient het vinkje in de Unifi GUI uit te blijven.
 
-### SSH - Installeer packages
-Stap 1:
+### 1. SSH - Installeer packages
+Voer de volgende opdracht uit om de benodigde packages te installeren:
 ```bash
 apt-update && apt install nano igmpproxy
 ```
 
-### SSH - Installeer UDM-IPTV script
-Als eerst; Alle credits voor dit script gaan naar @fabianishere.
+### 2. SSH - Installeer UDM-IPTV script
+Als eerste, alle credits voor dit script gaan naar @fabianishere.
 
-Installeer zijn one line install script:
+Installeer het one line install script met de volgende opdracht:
 ```bash
 sh -c "$(curl https://raw.githubusercontent.com/fabianishere/udm-iptv/master/install.sh -sSf)"
 ```
-Vervolgens dien je de gevraagde stappen te doorlopen. Tip: ``UDM Pro (SE/Max) SFP+ WAN = ETH9``
+Volg vervolgens de gevraagde stappen. Een tip: ``UDM Pro (SE/Max) SFP+ WAN = ETH9``
 
-### SSH - Configureren van udm-iptv.conf
-Ook het script maakt gebruik van improxy inplaats van igmproxy package. De juiste package hebben we eerder geinstalleerd.
-Pas nu het conf bestand aan met ``"nano /etc/udm-iptv.conf"``
+### 3. SSH - Configureren van udm-iptv.conf
+Ook het script maakt gebruik van improxy in plaats van het igmpproxy-pakket. De juiste package hebben we eerder geïnstalleerd. Pas nu het conf-bestand aan met de volgende opdracht: ``"nano /etc/udm-iptv.conf"``
 
-Pas het aan naar onderstaande waardes. Let op! ``"IPTV_LAN_INTERFACES="br4"`` is de enige variabele welke ik niet voor jou kan bepalen.
-Dit is namelijk de bridge waar multicast op je lokale LAN moet werken. Als je het script hebt uitgevoerd staat dit waarschijnlijk al goed.
+Pas het aan naar onderstaande waardes. Let op! ``"IPTV_LAN_INTERFACES="br4""`` is de enige variabele die ik niet voor jou kan bepalen. Dit is namelijk de bridge waar multicast op je lokale LAN moet werken. Als je het script hebt uitgevoerd staat dit waarschijnlijk al goed.
 
 ```bash
 IPTV_WAN_INTERFACE="eth9"
