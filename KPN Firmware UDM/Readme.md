@@ -13,7 +13,7 @@ De KPN NL versie betreft `ZR00_V090.08`
    - SFP Address: `192.168.200.1`. Dit is al ingesteld
    - Client Address: `192.168.200.2` Handmatig instellen
 
-## SFP Upgrade Instructions
+## SFP Upgrade Instructie
 
 Om je Zaram SFP+ te upgraden, volg de volgende stappen:
 
