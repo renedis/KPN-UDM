@@ -39,13 +39,20 @@ IPTV_IGMPPROXY_PROGRAM="igmpproxy"
 IPTV_IGMPPROXY_IGMP_VERSION="2"
 ```
 
-### 4. Unifi WebGUI - Multicast DNS en IGMP Snooping
+### 4. SSH - Herstart de IPTV service
+
+Om de instellingen actief te maken dienen we de service te herstarten met:
+```bash
+systemctl restart udm-iptv
+```
+
+### 5. Unifi WebGUI - Multicast DNS en IGMP Snooping
 Controleer in de WebGUI van je UDM Pro (SE/Max) of de volgende instellingen aan staan bij ``Instellingen > Networks``
 
 - ``Multicast DNS`` *Op het Subnet van IPTV waar je STB op aangesloten zit.
 - ``IGMP Snooping`` *Op het subnet van IPTV waar je STB op aangesloten zit.
 
-### 5. Wachten op toepassen op netwerk
+### 6. Wachten op toepassen op netwerk
 Geduld is een schone zaak. Wanneer je alleen een UDM Pro (SE/Max) in je netwerk hebt naast clients, zullen de instellingen snel worden toegepast. Echter, wanneer je een groter netwerk hebt met meerdere switches, kan het toepassen van de instellingen veel langer duren. Houd rekening met een verwerkingstijd van 20 tot 30 minuten.
 
 Het is belangrijk op te merken dat een reboot om het proces te versnellen geen effect zal hebben. Het systeem heeft tijd nodig om de wijzigingen door te voeren en deze te verspreiden naar alle aangesloten apparaten.
