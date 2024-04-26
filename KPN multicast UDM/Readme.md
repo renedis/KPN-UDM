@@ -6,7 +6,7 @@ De standaardmethode voor het instellen van multicast is niet voldoende effectief
 De standaard ingebouwde IGMP proxy van de UDM Pro (SE/Max) werkt helaas niet goed. Om tot een goede werking van multicast te komen moeten er aanvullende acties plaatsen vinden. Dit moet via SSH uitgevoerd worden. Houd er rekening mee dat je Zaram SFP+ verbinding al werkt/actief is!
 De ingebouwde versie heeft benaming improxy, we dienen de standaard igmpproxy package te installeren. Voor gemaks doeleinde installeren we ook de nano package. Ter info: Ten alle tijden dient het vinkje in de Unifi WebGUI uit te blijven.
 
-# Waarom IGMPPROXY en niet IMPROXY
+## Waarom IGMPPROXY en niet IMPROXY
 Zowel de packages 'improxy' als 'igmpproxy' bieden de basisfunctionaliteit voor IGMP-proxying. Echter, improxy is de standaard UDM pre-geïnstalleerde package, die gekoppeld is aan de standaardinstellingen van het apparaat. Als u de ETH8 Ethernet-verbinding gebruikt, is improxy voldoende. Echter, bij gebruik van de ETH9 Fiber-verbinding, kan improxy problemen veroorzaken vanwege compatibiliteitskwesties met de software/firmware van de UDM zelf. Daarom is het noodzakelijk om de 'igmpproxy' package van de standaard Debian repository te installeren.
 
 ### 1. SSH - Installeer packages
