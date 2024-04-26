@@ -4,20 +4,27 @@ Voor het gebruik met KPN is een specifieke firmware-upgrade vereist. Dit betreft
 De firmware dient men via eigen kanalen te bemachtigen. Deze kan momenteel niet worden voorzien via dit kanaal. 
 De KPN NL versie betreft `ZR00_V090.08`
 
+## Benodigdheden voor flashen via UDM:
+   - SSH toegang
+   - Desktop/Laptop met bekabelde verbinding (MacOS of Windows is toegestaan)
+   - Vrij SFP+ LAN poort geconfigureerd op subnet 192.168.200.x `ETH9 WAN is niet afdoende voor flashen (voor sommige HW revisions)`
+   - TFTP server op Desktop/Laptop `MacOS = trivial.app` - `Windows = Solarwinds TFTP server`
+   - Subnet `192.168.200.x` op de UDM Pro (SE/Max). Gebruik enkel static IP's.
+   - SFP Address: `192.168.200.1`. Dit is al ingesteld
+   - Client Address: `192.168.200.2` Handmatig instellen
+
 ## SFP Upgrade Instructions
 
-To upgrade your SFP, follow the steps below:
+Om je Zaram SFP+ te upgraden, volg de volgende stappen:
 
-**Connect to the SFP**: 
+**Verbind naar de SFP+**: 
    - Use SSH to connect to the SFP.
-   - SFP Address: `192.168.200.1`
-   - Client Address: `192.168.200.2`
 
 **Login Credentials**:
    - Username: `admin`
    - Password: `zrmt123!@#`
 
-## Detailed steps
+## Gedetailleerde stappen
 
 ```bash
 /dev/pty1000000000 login: admin
@@ -60,7 +67,7 @@ admin@ZXONT00000 [/] # saveenv
 admin@ZXONT00000 [/] # reset
 ```
 
-# Summary of all commands
+# Opsomming van alle commando's
 ```bash
 - tftp 192.168.200.2 ZR00_V090.08
 - fuse image0 ZR00_V090.08
