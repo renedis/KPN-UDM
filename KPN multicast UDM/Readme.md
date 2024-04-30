@@ -50,7 +50,7 @@ systemctl restart udm-iptv
 ```
 
 ### 5. Unifi WebGUI - Multicast DNS en IGMP Snooping
-Controleer in de WebGUI van je UDM Pro (SE/Max) of de volgende instellingen aan staan bij ``Instellingen > Networks``
+Controleer in de WebGUI van je UDM Pro (SE/Max) of de volgende instellingen `aangevinkt` staan bij ``Instellingen > Networks``
 
 - ``Multicast DNS`` *Op het Subnet van IPTV waar je STB op aangesloten zit.
 - ``IGMP Snooping`` *Op het subnet van IPTV waar je STB op aangesloten zit.
@@ -60,6 +60,11 @@ Geduld is een schone zaak. Wanneer je alleen een UDM Pro (SE/Max) in je netwerk 
 
 Het is belangrijk op te merken dat een reboot om het proces te versnellen geen effect zal hebben. Het systeem heeft tijd nodig om de wijzigingen door te voeren en deze te verspreiden naar alle aangesloten apparaten.
 
+### HELP. Indien het nog steeds niet werkt
+In sommige gevallen werkt het helaas nog steeds niet naar wens, met name bij firmware versies hoger dan `v3.2.x.` Er is echter een mogelijke oplossing: schakel `Storm Control` in op de LAN-poort waar de STB op is aangesloten. Dit kan worden ingesteld met de volgende parameters:
+- Unicast `200 pkts/s`
+- Multicast `200 pkts/s`
+- Broadcast `200 pkts/s`
 
 ### Disclaimer: Alles op Eigen Risico
 
