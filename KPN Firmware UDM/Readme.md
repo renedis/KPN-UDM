@@ -1,6 +1,4 @@
 # WORK IN PROGRESS! Instructies niet compleet!
-# WORK IN PROGRESS! Instructies niet compleet!
-# WORK IN PROGRESS! Instructies niet compleet!
 
 # Zaram firmware
 Voor het gebruik met KPN is een specifieke firmware-upgrade vereist. Dit betreft een officiële firmware die speciaal is ontwikkeld voor KPN NL. Hoewel deze firmware-upgrade ook werkt op het Delta-netwerk, is dit niet strikt noodzakelijk. Het flashen van de firmware kan volledig worden uitgevoerd op de UDM Pro (SE/Max) zelf, of via een Unifi-switch met een SFP+ poort in combinatie met de UDM Pro (SE/Max).
@@ -12,10 +10,11 @@ De firmware is beschikbaar op deze locatie: [https://github.com/renedis/KPN-UDM/
 ## Benodigdheden voor flashen via UDM:
    - SSH toegang
    - Desktop/Laptop met bekabelde verbinding (MacOS of Windows is toegestaan)
+   - Subnet `192.168.200.x` op de UDM Pro (SE/Max). `Gebruik enkel static IP's`
+   - Vrij LAN poort geconfigureerd op subnet 192.168.200.x `Voor client connectie`
    - Vrij SFP+ LAN poort geconfigureerd op subnet 192.168.200.x `ETH9 WAN is niet afdoende voor flashen (voor sommige HW revisions). Gebruik ETH10 of een vrije SFP+ poort op een UniFi switch.`
    - TFTP server op Desktop/Laptop `MacOS = trivial.app` - `Windows = Solarwinds TFTP server`
-   - Subnet `192.168.200.x` op de UDM Pro (SE/Max). Gebruik enkel static IP's.
-   - SFP Address: `192.168.200.1`. Dit is al ingesteld op de Zaram SFP+.
+   - SFP Address: `192.168.200.1` Dit is al ingesteld op de Zaram SFP+.
    - Client Address: `192.168.200.2` Handmatig instellen op ke Desktop/Laptop.
 
 ## SFP Upgrade Instructie
