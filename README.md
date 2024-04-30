@@ -5,8 +5,9 @@ De onderstaande instructies hebben tot doel richtlijnen te verschaffen voor het 
 ## Zaram firmware
 Voor het gebruik met KPN is een specifieke firmware-upgrade vereist. Dit betreft een officiële firmware die speciaal is ontwikkeld voor KPN NL. Hoewel deze firmware-upgrade ook werkt op het Delta-netwerk, is dit niet strikt noodzakelijk. Het flashen van de firmware kan volledig worden uitgevoerd op de UDM Pro (SE/Max) zelf, of via een Unifi-switch met een SFP+ poort in combinatie met de UDM Pro (SE/Max).
 
-De firmware dient men via eigen kanalen te bemachtigen. Deze kan momenteel niet worden voorzien via dit kanaal. De KPN NL versie betreft ZR00_V090.08
-
+De firmware is beschikbaar op deze locatie: [https://github.com/renedis/KPN-UDM/tree/main/Firmware%20files](https://github.com/renedis/KPN-UDM/tree/main/Firmware%20files).
+- De KPN NL versie betreft `ZR00_V090.08`
+  
 ###
 ## Multicast
 De standaardmethode voor het instellen van multicast is niet voldoende effectief. Dit komt doordat de UDM Pro (SE/Max) standaard geen optimale ondersteuning biedt voor multicast. Er zijn aanvullende stappen nodig om multicast correct te configureren, zodat het soepel en betrouwbaar functioneert.
