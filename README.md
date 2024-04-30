@@ -15,10 +15,12 @@ De standaardmethode voor het instellen van multicast is niet voldoende effectief
 ###
 
 ### Disclaimer: Alles op Eigen Risico
-De informatie op deze pagina('s) / in dit document wordt verstrekt als algemene informatie. Hoewel we ons best doen om de informatie actueel en juist te houden, kunnen we geen garanties geven over de volledigheid, nauwkeurigheid, betrouwbaarheid, geschiktheid of beschikbaarheid ervan met betrekking tot de pagina('s) of de informatie, producten, diensten of gerelateerde afbeeldingen die op de website voor welk doel dan ook worden aangeboden.
 
-Elk vertrouwen dat je stelt in deze informatie is strikt op eigen risico. Wij zijn niet aansprakelijk voor enig verlies of schade, inclusief maar niet beperkt tot indirecte of gevolgschade, of enig verlies of schade die voortvloeit uit het verlies van gegevens of winsten die voortvloeien uit of in verband met het gebruik van deze pagina('s).
+<sup>De informatie op deze pagina('s) / in dit document wordt verstrekt als algemene informatie. Hoewel we ons best doen om de informatie actueel en juist te houden, kunnen we geen garanties geven over de volledigheid, nauwkeurigheid, betrouwbaarheid, geschiktheid of beschikbaarheid ervan met betrekking tot de pagina('s) of de informatie, producten, diensten of gerelateerde afbeeldingen die op de website voor welk doel dan ook worden aangeboden.</sup>
 
-Door deze pagina('s) te gebruiken, ga je ermee akkoord dat je de volledige verantwoordelijkheid aanvaardt voor het gebruik van deze informatie en stem je ermee in om ons niet aansprakelijk te stellen voor enige claims die voortvloeien uit je gebruik van deze pagina('s).
+<sup>Elk vertrouwen dat je stelt in deze informatie is strikt op eigen risico. Wij zijn niet aansprakelijk voor enig verlies of schade, inclusief maar niet beperkt tot indirecte of gevolgschade, of enig verlies of schade die voortvloeit uit het verlies van gegevens of winsten die voortvloeien uit of in verband met het gebruik van deze pagina('s).</sup>
 
-De informatie op deze pagina('s) / in deze documenten is niet bedoeld als vervanging voor professioneel advies. Raadpleeg altijd een gekwalificeerde professional voor specifieke adviezen.
+<sup>Door deze pagina('s) te gebruiken, ga je ermee akkoord dat je de volledige verantwoordelijkheid aanvaardt voor het gebruik van deze informatie en stem je ermee in om ons niet aansprakelijk te stellen voor enige claims die voortvloeien uit je gebruik van deze pagina('s).</sup>
+
+<sup>De informatie op deze pagina('s) / in deze documenten is niet bedoeld als vervanging voor professioneel advies. Raadpleeg altijd een gekwalificeerde professional voor specifieke adviezen.</sup>
+
