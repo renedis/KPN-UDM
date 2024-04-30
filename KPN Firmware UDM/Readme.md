@@ -24,6 +24,7 @@ Om je Zaram SFP+ te upgraden, volg de volgende stappen:
 **Login Credentials**:
    - Username: `admin`
    - Password: `zrmt123!@#`
+   - Type connection: `SSH`
 
 ## Gedetailleerde stappen
 
