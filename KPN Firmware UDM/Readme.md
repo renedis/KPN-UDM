@@ -12,11 +12,11 @@ De firmware is beschikbaar op deze locatie: [https://github.com/renedis/KPN-UDM/
 ## Benodigdheden voor flashen via UDM:
    - SSH toegang
    - Desktop/Laptop met bekabelde verbinding (MacOS of Windows is toegestaan)
-   - Vrij SFP+ LAN poort geconfigureerd op subnet 192.168.200.x `ETH9 WAN is niet afdoende voor flashen (voor sommige HW revisions)`
+   - Vrij SFP+ LAN poort geconfigureerd op subnet 192.168.200.x `ETH9 WAN is niet afdoende voor flashen (voor sommige HW revisions). Gebruik ETH10 of een vrije SFP+ poort op een UniFi switch.`
    - TFTP server op Desktop/Laptop `MacOS = trivial.app` - `Windows = Solarwinds TFTP server`
    - Subnet `192.168.200.x` op de UDM Pro (SE/Max). Gebruik enkel static IP's.
-   - SFP Address: `192.168.200.1`. Dit is al ingesteld
-   - Client Address: `192.168.200.2` Handmatig instellen
+   - SFP Address: `192.168.200.1`. Dit is al ingesteld op de Zaram SFP+.
+   - Client Address: `192.168.200.2` Handmatig instellen op ke Desktop/Laptop.
 
 ## SFP Upgrade Instructie
 
